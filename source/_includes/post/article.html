@@ -1,0 +1,9 @@
+<header>
+  {% include post/meta.html %}
+  <h1>
+    <a href="{{ site.url }}{{ page.url | remove:'index.html' | strip_slash }}/">
+      {{ page.title }}
+    </a>
+  </h1>
+</header>
+{{ content }}

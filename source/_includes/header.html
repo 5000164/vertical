@@ -1,0 +1,10 @@
+<header class="header">
+  <a href="{{ site.url }}/">5000164 here.</a>
+</header>
+<ul>
+  {% for post in paginator.posts %}
+  <li>
+  {% include title.html %}
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,50 @@
+.left {
+  background: hsl(275, 50%, 15%);
+
+  .header {
+    position: relative;
+    font-family: 'Dorsa', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: hsl(25, 50%, 99%);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      background: hsl(25, 50%, 99%);
+    }
+
+    a {
+      color: hsl(25, 50%, 99%);
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      margin: 10px;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}

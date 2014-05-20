@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} | {% endif %}{{ site.title }}</title>
+<meta name="author" content="{{ site.author }}">
+
+{% if page.description %}
+<meta name="description" content="{{ page.description }}">
+{% endif %}
+{% if page.keywords %}
+<meta name="keywords" content="{{ page.keywords }}">
+{% endif %}
+
+<link rel="canonical" href="{{ site.url }}{{ page.url | remove:'index.html' | strip_slash }}/">
+<link href="{{ site.url }}/favicon.ico" rel="icon">
+<link href="{{ site.url }}/stylesheets/screen.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Dorsa' rel='stylesheet'>
+
+{% include google_analytics.html %}
+</head>
